@@ -1,4 +1,4 @@
-# داشبورد مدیریت دارویی MDEC
+# داشبورد مدیریت دارویی MDPC
 # MDEC Pharmaceutical Management Dashboard
 
 ## نیازمندی‌ها | Prerequisites
