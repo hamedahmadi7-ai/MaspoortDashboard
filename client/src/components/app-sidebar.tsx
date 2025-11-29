@@ -87,12 +87,12 @@ export function AppSidebar() {
 
   return (
     <Sidebar>
-      <SidebarHeader className="p-4">
+      <SidebarHeader className="p-2">
         <Link href="/" className="flex items-center justify-center">
           <img 
             src={logoUrl} 
             alt="MDEC Logo" 
-            className="h-20 w-20 object-contain"
+            className="h-12 w-12 object-contain"
             data-testid="logo-image"
           />
         </Link>
