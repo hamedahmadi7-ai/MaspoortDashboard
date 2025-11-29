@@ -58,14 +58,9 @@ export class MemStorage implements IStorage {
 
   private seedData() {
     const productsData: InsertProduct[] = [
-      { name: "مولتی ویتامین A-Z", code: "MV-001", category: "مکمل‌ها", unit: "عدد", price: "23000", stock: 45000, minStock: 30000, status: "active" },
-      { name: "ویتامین D3", code: "VD-002", category: "ویتامین‌ها", unit: "عدد", price: "20000", stock: 12000, minStock: 20000, status: "active" },
-      { name: "امگا 3", code: "OM-003", category: "اسیدهای چرب", unit: "عدد", price: "30000", stock: 38000, minStock: 25000, status: "active" },
-      { name: "کلسیم + D", code: "CD-004", category: "مینرال‌ها", unit: "عدد", price: "20000", stock: 8000, minStock: 15000, status: "active" },
-      { name: "ویتامین C 1000", code: "VC-005", category: "ویتامین‌ها", unit: "عدد", price: "15000", stock: 52000, minStock: 30000, status: "active" },
-      { name: "زینک پلاس", code: "ZP-006", category: "مینرال‌ها", unit: "عدد", price: "18000", stock: 28000, minStock: 20000, status: "active" },
-      { name: "آهن + فولیک اسید", code: "IF-007", category: "مینرال‌ها", unit: "عدد", price: "22000", stock: 5000, minStock: 12000, status: "active" },
-      { name: "ویتامین B12", code: "VB-008", category: "ویتامین‌ها", unit: "عدد", price: "25000", stock: 35000, minStock: 25000, status: "active" },
+      { name: "مصپورت 500", code: "MSP-001", category: "مکمل‌های دارویی", unit: "عدد", price: "45000", stock: 50000, minStock: 30000, status: "active" },
+      { name: "زابوتریکس", code: "ZBT-002", category: "مکمل‌های دارویی", unit: "عدد", price: "38000", stock: 40000, minStock: 25000, status: "active" },
+      { name: "مصتروپین", code: "MST-003", category: "مکمل‌های دارویی", unit: "عدد", price: "52000", stock: 35000, minStock: 20000, status: "active" },
     ];
 
     const createdProducts: Product[] = [];
@@ -92,11 +87,11 @@ export class MemStorage implements IStorage {
     });
 
     const salesData: Omit<InsertSale, 'productId'>[] = [
-      { quantity: 500, unitPrice: "23000", totalPrice: "11500000", region: "تهران", customerName: "داروخانه دکتر احمدی", saleDate: new Date("2024-11-29") },
-      { quantity: 2000, unitPrice: "20000", totalPrice: "40000000", region: "تهران", customerName: "شبکه بهداشت تهران", saleDate: new Date("2024-11-28") },
-      { quantity: 300, unitPrice: "30000", totalPrice: "9000000", region: "اصفهان", customerName: "داروخانه شفا", saleDate: new Date("2024-11-28") },
-      { quantity: 1500, unitPrice: "20000", totalPrice: "30000000", region: "مشهد", customerName: "بیمارستان رازی", saleDate: new Date("2024-11-27") },
-      { quantity: 800, unitPrice: "15000", totalPrice: "12000000", region: "شیراز", customerName: "داروخانه پاستور", saleDate: new Date("2024-11-27") },
+      { quantity: 800, unitPrice: "45000", totalPrice: "36000000", region: "تهران", customerName: "داروخانه دکتر احمدی", saleDate: new Date("2024-11-29") },
+      { quantity: 1500, unitPrice: "45000", totalPrice: "67500000", region: "تهران", customerName: "شبکه بهداشت تهران", saleDate: new Date("2024-11-28") },
+      { quantity: 600, unitPrice: "38000", totalPrice: "22800000", region: "اصفهان", customerName: "داروخانه شفا", saleDate: new Date("2024-11-28") },
+      { quantity: 900, unitPrice: "38000", totalPrice: "34200000", region: "مشهد", customerName: "بیمارستان رازی", saleDate: new Date("2024-11-27") },
+      { quantity: 1200, unitPrice: "52000", totalPrice: "62400000", region: "شیراز", customerName: "داروخانه پاستور", saleDate: new Date("2024-11-27") },
     ];
 
     salesData.forEach((s, index) => {
