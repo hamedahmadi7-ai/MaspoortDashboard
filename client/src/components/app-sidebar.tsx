@@ -26,6 +26,7 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import logoUrl from "@assets/Logo-3 copy_1764401395370.png";
 
 const mainMenuItems = [
   {
@@ -87,14 +88,13 @@ export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarHeader className="p-4">
-        <Link href="/" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-purple-600">
-            <Pill className="h-5 w-5 text-white" />
-          </div>
-          <div className="flex flex-col group-data-[collapsible=icon]:hidden">
-            <span className="text-base font-bold">مصپورت</span>
-            <span className="text-xs text-muted-foreground">داشبورد مدیریت</span>
-          </div>
+        <Link href="/" className="flex items-center justify-center">
+          <img 
+            src={logoUrl} 
+            alt="MDEC Logo" 
+            className="h-20 w-20 object-contain"
+            data-testid="logo-image"
+          />
         </Link>
       </SidebarHeader>
       <SidebarSeparator />
